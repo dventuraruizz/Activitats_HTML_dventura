@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulari d'enviament</title>
+        <script type="text/javascript">
+            function validar () {
+                var psswd=document.getElementById("psswd").value;
+                var confpsswd=document.getElementById("confpsswd").value;
+                if(psswd==confpsswd){
+                    return true;
+                }
+                else{
+                    alert("No coincideix");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <table style="width: 100%; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+            <form action="mailto:davidventuraruiz@gmail.com" onsubmit="return validar ()">
+            <tr>
+                <td style="background-color: #306090; color: white;" colspan="2"><h2>Enviar missatge<img src="img/gb_reload_s.gif" alt="" style="margin-left: 600px;"></h2></td>
+            </tr>
+            <tr>
+                <td style="margin-top: 20px;" align="right" width="200px"><strong>Usuari: </strong></td>
+                <td><input type="text" name="" id="" maxlength="8"></td>
+            </tr>
+            <tr>
+                <td align="right"><strong>Contrasenya: </strong></td>
+                <td><input type="password" name="" id="psswd"></td>
+            </tr>
+            <tr>
+                <td align="right"><strong>Repetició de la contrasenya: </strong></td>
+                <td><input type="password" name="" id="confpsswd"></td>
+            </tr>
+            <tr>
+                <td align="right"><strong>Nom: </strong></td>
+                <td><input type="text" name="" id="" maxlength="8"></td>
+            </tr>
+            <tr>
+                <td align="right"><strong>E-Mail: </strong></td>
+                <td><input type="email" name="" id="" ></td>
+            </tr>
+            <tr>
+                <td align="right"><strong>Arxiu: </strong></td>
+                <td><input type="text" name="" id=""><input type="file"></td>
+            </tr>
+            <tr>
+                <td align="right"><strong>Imatge: </strong></td>
+                <td><input type="text" name="" id=""><input type="file"></td>
+            </tr>
+            <tr>
+                <td align="right"><strong>Quins jocs t'interessen?</strong></td>
+                <td>
+                    <input type="checkbox" name="" id="">Futbol
+                    <input type="checkbox" name="" id="">Tennis
+                    <input type="checkbox" name="" id="">Basquet
+                    <input type="checkbox" name="" id="">Padel
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;font-size: 10px;" colspan="2">El tamany de l'arxiu i la imatge no pot exedir els 4 KBytes</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center; font-size: 14px;"><strong>Requereixo resposta: <input type="radio">Si <input type="radio">No</td></strong> 
+            </tr>
+            <tr>
+                <th colspan="2" style="text-align: center;">Missatge</th>
+            </tr>
+            <tr>
+                <td style="text-align: center;" colspan="2"><textarea name="" id="" cols="50" rows="15"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Enviar">
+                    <input type="reset"  value="Borrar">
+                </td>
+            </tr>
+        
+        </form>
+        </table>
+    </body>
+</html>
